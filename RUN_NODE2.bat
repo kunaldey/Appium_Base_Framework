@@ -1,0 +1,1 @@
+appium -a 127.0.0.1 -p 4725 --bootstarp-port 4729 -U 0815f81a8dca1b01 --nodeconfig %~dpDAppium_Base_Framework\appium_node2.json

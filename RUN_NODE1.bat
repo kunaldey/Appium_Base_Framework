@@ -1,0 +1,2 @@
+C:\Program Files (x86)\Appium\node_modules\appium\lib\appium.js -a 127.0.0.1 -p 4723 --no-reset --bootstarp-port 4728 -U 0715f762c2ab2f3a --nodeconfig appium_node1.json
+node.exe C:\Program Files (x86)\Appium\node_modules\appium\lib\ Appium.js --address 127.0.0.1 --port 4728 -bp 2252 --nodeconfig D:\GitRpository\Appium_Base_Framework/appium_node1.json --udid emulator-5554
