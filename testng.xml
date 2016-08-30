@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- <suite name="ParallelExecution" verbose="1" parallel="tests" thread-count="5"> -->
+<suite name="ParallelExecution" verbose="1" parallel="tests" thread-count="5">
+
+	<test name="Calculator">
+		<parameter name="port" value="4723" />
+		<parameter name="device" value="0715f762c2ab2f3a" />
+		<parameter name="Parallel" value="Yes" />
+		<!--  <parameter name="platformName" value="Android" />
+		<parameter name="sleep" value="1000" />
+		<parameter name="Parallel" value="Yes" /> -->
+		<classes>
+			<class name="com.project.test.testEbay">
+				<methods>
+				    <include name="eBayLogin" />
+				</methods>
+			</class>	   
+		</classes>
+	</test>
+
+	<test name="Calculator2">
+		<parameter name="port" value="4725" />
+		<parameter name="device" value="0815f81a8dca1b01" />
+		<parameter name="Parallel" value="Yes" />
+		<!--  <parameter name="platformName" value="Android" />
+		<parameter name="sleep" value="1000" />
+		<parameter name="Parallel" value="Yes" /> -->
+		<classes>
+			<class name="com.project.test.testEbay">
+				<methods>
+				    <include name="eBayLogin" />
+				</methods>
+			</class>	   
+		</classes>
+	</test>
+	
+	<test name="Calculator3">
+		<parameter name="port" value="4727" />
+		<parameter name="device" value="1e7245ec" />
+		<parameter name="Parallel" value="Yes" />
+		<!--  <parameter name="platformName" value="Android" />
+		<parameter name="sleep" value="1000" />
+		<parameter name="Parallel" value="Yes" /> -->
+		<classes>
+			<class name="com.project.test.testEbay">
+				<methods>
+				    <include name="eBayLogin" />
+				</methods>
+			</class>	   
+		</classes>
+	</test>
+</suite> 
