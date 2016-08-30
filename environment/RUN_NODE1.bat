@@ -1,0 +1,1 @@
+appium -a 127.0.0.1 -p 4723 --bootstrap-port 4728 -U 0715f762c2ab2f3a --nodeconfig "D:\GitRpository\Appium_Base_Framework\run_node1.json"
