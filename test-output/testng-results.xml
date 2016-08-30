@@ -1,25 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16999" started-at="2016-08-24T11:34:15Z" finished-at="2016-08-24T11:34:32Z">
+  <suite name="ParallelExecution" duration-ms="26687" started-at="2016-08-30T10:03:44Z" finished-at="2016-08-30T10:04:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16999" started-at="2016-08-24T11:34:15Z" finished-at="2016-08-24T11:34:32Z">
-      <class name="test.testCalc">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test.testCalc@a3ffec]" name="setUp" is-config="true" duration-ms="5646" started-at="2016-08-24T17:04:15Z" finished-at="2016-08-24T17:04:20Z">
+    <test name="Calculator" duration-ms="12132" started-at="2016-08-30T10:03:44Z" finished-at="2016-08-30T10:03:56Z">
+      <class name="com.project.test.testEbay">
+        <test-method status="PASS" signature="setupCapabilities(java.lang.String, java.lang.String)[pri:0, instance:com.project.test.testEbay@4ed9f0]" name="setupCapabilities" is-config="true" duration-ms="5787" started-at="2016-08-30T15:33:44Z" finished-at="2016-08-30T15:33:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4723]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0715f762c2ab2f3a]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Sum()[pri:0, instance:test.testCalc@a3ffec]" name="Sum" duration-ms="10372" started-at="2016-08-24T17:04:20Z" finished-at="2016-08-24T17:04:31Z">
+        </test-method> <!-- setupCapabilities -->
+        <test-method status="PASS" signature="eBayLogin()[pri:0, instance:com.project.test.testEbay@4ed9f0]" name="eBayLogin" duration-ms="3951" started-at="2016-08-30T15:33:50Z" finished-at="2016-08-30T15:33:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Sum -->
-        <test-method status="PASS" signature="End()[pri:0, instance:test.testCalc@a3ffec]" name="End" is-config="true" duration-ms="967" started-at="2016-08-24T17:04:31Z" finished-at="2016-08-24T17:04:32Z">
+        </test-method> <!-- eBayLogin -->
+        <test-method status="PASS" signature="End()[pri:0, instance:com.project.test.testEbay@4ed9f0]" name="End" is-config="true" duration-ms="2363" started-at="2016-08-30T15:33:54Z" finished-at="2016-08-30T15:33:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- End -->
-      </class> <!-- test.testCalc -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.project.test.testEbay -->
+    </test> <!-- Calculator -->
+    <test name="Calculator2" duration-ms="12376" started-at="2016-08-30T10:03:44Z" finished-at="2016-08-30T10:03:57Z">
+      <class name="com.project.test.testEbay">
+        <test-method status="PASS" signature="setupCapabilities(java.lang.String, java.lang.String)[pri:0, instance:com.project.test.testEbay@4bee09]" name="setupCapabilities" is-config="true" duration-ms="5946" started-at="2016-08-30T15:33:44Z" finished-at="2016-08-30T15:33:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4725]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0815f81a8dca1b01]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCapabilities -->
+        <test-method status="PASS" signature="eBayLogin()[pri:0, instance:com.project.test.testEbay@4bee09]" name="eBayLogin" duration-ms="4071" started-at="2016-08-30T15:33:50Z" finished-at="2016-08-30T15:33:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eBayLogin -->
+        <test-method status="PASS" signature="End()[pri:0, instance:com.project.test.testEbay@4bee09]" name="End" is-config="true" duration-ms="2355" started-at="2016-08-30T15:33:54Z" finished-at="2016-08-30T15:33:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- End -->
+      </class> <!-- com.project.test.testEbay -->
+    </test> <!-- Calculator2 -->
+    <test name="Calculator3" duration-ms="26687" started-at="2016-08-30T10:03:44Z" finished-at="2016-08-30T10:04:11Z">
+      <class name="com.project.test.testEbay">
+        <test-method status="PASS" signature="setupCapabilities(java.lang.String, java.lang.String)[pri:0, instance:com.project.test.testEbay@18067a5]" name="setupCapabilities" is-config="true" duration-ms="17640" started-at="2016-08-30T15:33:44Z" finished-at="2016-08-30T15:34:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4727]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1e7245ec]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupCapabilities -->
+        <test-method status="PASS" signature="eBayLogin()[pri:0, instance:com.project.test.testEbay@18067a5]" name="eBayLogin" duration-ms="4465" started-at="2016-08-30T15:34:02Z" finished-at="2016-08-30T15:34:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eBayLogin -->
+        <test-method status="PASS" signature="End()[pri:0, instance:com.project.test.testEbay@18067a5]" name="End" is-config="true" duration-ms="4577" started-at="2016-08-30T15:34:06Z" finished-at="2016-08-30T15:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- End -->
+      </class> <!-- com.project.test.testEbay -->
+    </test> <!-- Calculator3 -->
+  </suite> <!-- ParallelExecution -->
 </testng-results>
