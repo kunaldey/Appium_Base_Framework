@@ -3,6 +3,10 @@
 <!-- <suite name="ParallelExecution" verbose="1" parallel="tests" thread-count="5"> -->
 <suite name="ParallelExecution" verbose="1" parallel="tests" thread-count="5">
 
+    <listeners>
+         <listener class-name="com.project.result.TestNGCustomReportListener" />
+    </listeners>
+    
 	<test name="Calculator">
 		<parameter name="port" value="4723" />
 		<parameter name="device" value="0715f762c2ab2f3a" />
@@ -14,6 +18,7 @@
 			<class name="com.project.test.testEbay">
 				<methods>
 				    <include name="eBayLogin" />
+				    <include name="ebayAll" />
 				</methods>
 			</class>	   
 		</classes>
@@ -30,18 +35,19 @@
 			<class name="com.project.test.testEbay">
 				<methods>
 				    <include name="eBayLogin" />
+				    <include name="ebayAll" />
 				</methods>
 			</class>	   
 		</classes>
 	</test>
 	
-	<test name="Calculator3">
+<!-- 	<test name="Calculator3">
 		<parameter name="port" value="4727" />
 		<parameter name="device" value="1e7245ec" />
 		<parameter name="Parallel" value="Yes" />
-		<!--  <parameter name="platformName" value="Android" />
+		 <parameter name="platformName" value="Android" />
 		<parameter name="sleep" value="1000" />
-		<parameter name="Parallel" value="Yes" /> -->
+		<parameter name="Parallel" value="Yes" />
 		<classes>
 			<class name="com.project.test.testEbay">
 				<methods>
@@ -49,5 +55,5 @@
 				</methods>
 			</class>	   
 		</classes>
-	</test>
+	</test> -->
 </suite> 
