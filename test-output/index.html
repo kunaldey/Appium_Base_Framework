@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-ParallelExecution">
-                    <span>D:\GitRpository\Appium_Base_Framework\testng.xml</span>
+                    <span>D:\GitRpository\Appium_Base_Framework_ExtentReport\Appium_Base_Framework\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-ParallelExecution">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,17 +102,22 @@
                     <div class="method-list-content passed suite-ParallelExecution">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-ParallelExecution" title="com.project.test.testEbay" hash-for-method="eBayLogin">eBayLogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-ParallelExecution" title="com.project.test.testEbay_extent" hash-for-method="ebayCategory">ebayCategory</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-ParallelExecution" title="com.project.test.testEbay" hash-for-method="eBayLogin">eBayLogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-ParallelExecution" title="com.project.test.testEbay_extent" hash-for-method="ebayCategory">ebayCategory</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-ParallelExecution" title="com.project.test.testEbay" hash-for-method="eBayLogin">eBayLogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-ParallelExecution" title="com.project.test.testEbay_extent" hash-for-method="ebaySelling">ebaySelling</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ParallelExecution" title="com.project.test.testEbay_extent" hash-for-method="ebaySelling">ebaySelling</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-ParallelExecution -->
@@ -130,28 +135,35 @@
           <div class="suite-ParallelExecution-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.project.test.testEbay</span>
+              <span class="class-name">com.project.test.testEbay_extent</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="eBayLogin">
-                  </a> <!-- eBayLogin -->
-                  <span class="method-name">eBayLogin</span>
+                  <a name="ebayCategory">
+                  </a> <!-- ebayCategory -->
+                  <span class="method-name">ebayCategory</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="eBayLogin">
-                  </a> <!-- eBayLogin -->
-                  <span class="method-name">eBayLogin</span>
+                  <a name="ebayCategory">
+                  </a> <!-- ebayCategory -->
+                  <span class="method-name">ebayCategory</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="eBayLogin">
-                  </a> <!-- eBayLogin -->
-                  <span class="method-name">eBayLogin</span>
+                  <a name="ebaySelling">
+                  </a> <!-- ebaySelling -->
+                  <span class="method-name">ebaySelling</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ebaySelling">
+                  </a> <!-- ebaySelling -->
+                  <span class="method-name">ebaySelling</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -159,23 +171,27 @@
         </div> <!-- panel ParallelExecution -->
         <div panel-name="test-xml-ParallelExecution" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\GitRpository\Appium_Base_Framework\testng.xml</span>
+            <span class="header-content">D:\GitRpository\Appium_Base_Framework_ExtentReport\Appium_Base_Framework\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;ParallelExecution&quot; parallel=&quot;tests&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.project.result.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test name=&quot;Calculator&quot;&gt;
     &lt;parameter name=&quot;port&quot; value=&quot;4723&quot;/&gt;
     &lt;parameter name=&quot;Parallel&quot; value=&quot;Yes&quot;/&gt;
     &lt;parameter name=&quot;device&quot; value=&quot;0715f762c2ab2f3a&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.project.test.testEbay&quot;&gt;
+      &lt;class name=&quot;com.project.test.testEbay_extent&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;eBayLogin&quot;/&gt;
+          &lt;include name=&quot;ebayCategory&quot;/&gt;
+          &lt;include name=&quot;ebaySelling&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.project.test.testEbay --&gt;
+      &lt;/class&gt; &lt;!-- com.project.test.testEbay_extent --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Calculator --&gt;
   &lt;test name=&quot;Calculator2&quot;&gt;
@@ -183,25 +199,14 @@
     &lt;parameter name=&quot;Parallel&quot; value=&quot;Yes&quot;/&gt;
     &lt;parameter name=&quot;device&quot; value=&quot;0815f81a8dca1b01&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.project.test.testEbay&quot;&gt;
+      &lt;class name=&quot;com.project.test.testEbay_extent&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;eBayLogin&quot;/&gt;
+          &lt;include name=&quot;ebayCategory&quot;/&gt;
+          &lt;include name=&quot;ebaySelling&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.project.test.testEbay --&gt;
+      &lt;/class&gt; &lt;!-- com.project.test.testEbay_extent --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Calculator2 --&gt;
-  &lt;test name=&quot;Calculator3&quot;&gt;
-    &lt;parameter name=&quot;port&quot; value=&quot;4727&quot;/&gt;
-    &lt;parameter name=&quot;Parallel&quot; value=&quot;Yes&quot;/&gt;
-    &lt;parameter name=&quot;device&quot; value=&quot;1e7245ec&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.project.test.testEbay&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;eBayLogin&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.project.test.testEbay --&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Calculator3 --&gt;
 &lt;/suite&gt; &lt;!-- ParallelExecution --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -217,9 +222,6 @@
               </li>
               <li>
                 <span class="test-name">Calculator2 (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Calculator3 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -245,24 +247,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'eBayLogin')
-data.setCell(0, 2, 'com.project.test.testEbay')
-data.setCell(0, 3, 4465);
+data.setCell(0, 1, 'ebayCategory')
+data.setCell(0, 2, 'com.project.test.testEbay_extent')
+data.setCell(0, 3, 6833);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'eBayLogin')
-data.setCell(1, 2, 'com.project.test.testEbay')
-data.setCell(1, 3, 4071);
+data.setCell(1, 1, 'ebayCategory')
+data.setCell(1, 2, 'com.project.test.testEbay_extent')
+data.setCell(1, 3, 6780);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'eBayLogin')
-data.setCell(2, 2, 'com.project.test.testEbay')
-data.setCell(2, 3, 3951);
+data.setCell(2, 1, 'ebaySelling')
+data.setCell(2, 2, 'com.project.test.testEbay_extent')
+data.setCell(2, 3, 4028);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ebaySelling')
+data.setCell(3, 2, 'com.project.test.testEbay_extent')
+data.setCell(3, 3, 3364);
 window.suiteTableData['ParallelExecution']= { tableData: data, tableDiv: 'times-div-ParallelExecution'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-ParallelExecution">
               </div> <!-- times-div-ParallelExecution -->
             </div> <!-- times-div -->
@@ -277,9 +283,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-ParallelExecution" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.project.test.testEbay_extent</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">ebayRegister</span>
+                <br/>
+                <span class="ignored-method-name">ebayRegister</span>
+                <br/>
+                <span class="ignored-method-name">eBayLogin</span>
+                <br/>
+                <span class="ignored-method-name">eBayLogin</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-ParallelExecution" class="panel">
@@ -288,11 +307,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.project.test.testEbay</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setupCapabilities(4727, 1e7245ec)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              <div class="chronological-class-name">com.project.test.testEbay_extent</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setupCapabilities(4723, 0715f762c2ab2f3a)</span>
                 <span class="method-start">0 ms</span>
@@ -302,28 +317,28 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">eBayLogin</span>
-                <span class="method-start">5813 ms</span>
+                <span class="method-name">ebayCategory</span>
+                <span class="method-start">5705 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">eBayLogin</span>
-                <span class="method-start">5946 ms</span>
+                <span class="method-name">ebayCategory</span>
+                <span class="method-start">5705 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ebaySelling</span>
+                <span class="method-start">12488 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ebaySelling</span>
+                <span class="method-start">12539 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">End</span>
-                <span class="method-start">9766 ms</span>
+                <span class="method-start">15906 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test after">
                 <span class="method-name">End</span>
-                <span class="method-start">10019 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="test-method">
-                <span class="method-name">eBayLogin</span>
-                <span class="method-start">17641 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">End</span>
-                <span class="method-start">22108 ms</span>
+                <span class="method-start">16518 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

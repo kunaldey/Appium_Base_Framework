@@ -547,8 +547,8 @@ public class TestNGCustomReportListener implements IReporter{
 		out.println("<html xmlns=\"http://www.w3.org/1999/xhtml\">");
 		out.println("<head>");
 		out.println("<title>TestNG Report</title>");
-		out.println("<link rel=\"stylesheet\" href=\"basic.css\">");
-/*		out.println("<style type=\"text/css\">");
+		//out.println("<link rel=\"stylesheet\" href=\"basic.css\">");
+		out.println("<style type=\"text/css\">");
 		out.println("table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}");
 		out.println("td,th {border:1px solid #009;padding:.25em .5em}");
 		out.println(".result th {vertical-align:bottom}");
@@ -565,7 +565,7 @@ public class TestNGCustomReportListener implements IReporter{
 		out.println(".failedeven td,.stripe .numi_attn {background-color: #D00}");
 		out.println(".stacktrace {white-space:pre;font-family:monospace}");
 		out.println(".totop {font-size:85%;text-align:center;border-bottom:2px solid #000}");
-		out.println("</style>");*/
+		out.println("</style>");
 		out.println("</head>");
 		out.println("<body>");
 		

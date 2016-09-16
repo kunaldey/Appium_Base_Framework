@@ -4,7 +4,7 @@
 <suite name="ParallelExecution" verbose="1" parallel="tests" thread-count="5">
 
     <listeners>
-         <listener class-name="com.project.result.TestNGCustomReportListener" />
+         <listener class-name="com.project.result.ExtentReporterNG" />
     </listeners>
     
 	<test name="Calculator">
@@ -15,10 +15,11 @@
 		<parameter name="sleep" value="1000" />
 		<parameter name="Parallel" value="Yes" /> -->
 		<classes>
-			<class name="com.project.test.testEbay">
+			<class name="com.project.test.testEbay_extent">
 				<methods>
-				    <include name="eBayLogin" />
-				    <include name="ebayAll" />
+				    <include name="ebayCategory" />
+				    <!-- <include name="ebayRegister" /> -->
+				    <include name="ebaySelling" />
 				</methods>
 			</class>	   
 		</classes>
@@ -32,10 +33,11 @@
 		<parameter name="sleep" value="1000" />
 		<parameter name="Parallel" value="Yes" /> -->
 		<classes>
-			<class name="com.project.test.testEbay">
+			<class name="com.project.test.testEbay_extent">
 				<methods>
-				    <include name="eBayLogin" />
-				    <include name="ebayAll" />
+				    <include name="ebayCategory" />
+<!-- 				    <include name="ebayRegister" /> -->
+				    <include name="ebaySelling" />
 				</methods>
 			</class>	   
 		</classes>

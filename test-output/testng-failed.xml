@@ -1,39 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [ParallelExecution]" parallel="tests">
-  <parameter name="port" value="4727"/>
+  <parameter name="port" value="4725"/>
   <parameter name="Parallel" value="Yes"/>
-  <parameter name="device" value="1e7245ec"/>
-  <test name="Calculator2(failed)" parallel="tests">
-    <parameter name="port" value="4725"/>
-    <parameter name="Parallel" value="Yes"/>
-    <parameter name="device" value="0815f81a8dca1b01"/>
-    <classes>
-      <class name="com.project.test.testEbay">
-        <methods>
-          <include name="End"/>
-          <include name="End"/>
-          <include name="End"/>
-          <include name="eBayLogin"/>
-        </methods>
-      </class> <!-- com.project.test.testEbay -->
-    </classes>
-  </test> <!-- Calculator2(failed) -->
-  <test name="Calculator3(failed)" parallel="tests">
-    <parameter name="port" value="4727"/>
-    <parameter name="Parallel" value="Yes"/>
-    <parameter name="device" value="1e7245ec"/>
-    <classes>
-      <class name="com.project.test.testEbay">
-        <methods>
-          <include name="End"/>
-          <include name="End"/>
-          <include name="End"/>
-          <include name="eBayLogin"/>
-        </methods>
-      </class> <!-- com.project.test.testEbay -->
-    </classes>
-  </test> <!-- Calculator3(failed) -->
+  <parameter name="device" value="0815f81a8dca1b01"/>
+  <listeners>
+    <listener class-name="com.project.result.TestNGCustomReportListener"/>
+  </listeners>
   <test name="Calculator(failed)" parallel="tests">
     <parameter name="port" value="4723"/>
     <parameter name="Parallel" value="Yes"/>
@@ -41,12 +14,31 @@
     <classes>
       <class name="com.project.test.testEbay">
         <methods>
-          <include name="End"/>
+          <include name="setupCapabilities"/>
+          <include name="setupCapabilities"/>
           <include name="End"/>
           <include name="End"/>
           <include name="eBayLogin"/>
+          <include name="ebayAll"/>
         </methods>
       </class> <!-- com.project.test.testEbay -->
     </classes>
   </test> <!-- Calculator(failed) -->
+  <test name="Calculator2(failed)" parallel="tests">
+    <parameter name="port" value="4725"/>
+    <parameter name="Parallel" value="Yes"/>
+    <parameter name="device" value="0815f81a8dca1b01"/>
+    <classes>
+      <class name="com.project.test.testEbay">
+        <methods>
+          <include name="setupCapabilities"/>
+          <include name="setupCapabilities"/>
+          <include name="End"/>
+          <include name="End"/>
+          <include name="eBayLogin"/>
+          <include name="ebayAll"/>
+        </methods>
+      </class> <!-- com.project.test.testEbay -->
+    </classes>
+  </test> <!-- Calculator2(failed) -->
 </suite> <!-- Failed suite [ParallelExecution] -->
